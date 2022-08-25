@@ -5,6 +5,12 @@ __version__ = "0.1.0"
 __license__ = "MIT"
 
 
+def increment(x):
+    return x+1
+
+def decrement(x):
+    return x-1
+
 def main():
     print("hello world, this is the HW 0 project from Team 11")
 
