@@ -10,7 +10,8 @@ def increment(x):
 
 def decrement(x):
     return x-1
-
+def divide(x):
+    return x/2;
 def main():
     print("hello world, this is the HW 0 project from Team 11")
 
