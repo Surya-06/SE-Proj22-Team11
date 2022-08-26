@@ -3,8 +3,7 @@ Run tests by running the following cmd in the root dir: py.test
 """
 
 import sys
-sys.path.append("..")
-from code.main import increment, decrement
+from Code.main import increment, decrement
 
 def test_increment():
     for i in range(1, 1000):
