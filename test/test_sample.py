@@ -13,3 +13,6 @@ def test_decrement():
     for i in range(1, 1000):
         assert decrement(i) == i-1
 
+def test_divide():
+    for i in range(1, 1000):
+        assert divide(i) == i/2
