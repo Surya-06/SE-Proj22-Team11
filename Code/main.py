@@ -11,6 +11,9 @@ def increment(x):
 def decrement(x):
     return x-1
 
+def square(x):
+    return x*x
+
 def divide(x):
     return x/2
 
