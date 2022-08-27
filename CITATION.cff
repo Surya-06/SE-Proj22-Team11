@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Susarla"
+  given-names: "Surya"
+- family-names: "Paruchuri"
+  given-names: "Harshitha"
+- family-names: "Vakeel"
+  given-names: "Aditi"
+- family-names: "Jadhav"
+  given-names: "Kaushik"
+- family-names: "Vemuri"
+  given-names: "Pradyumna"  
+title: "SE-Proj22-Team11"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2022-08-26
+url: "https://github.com/Surya-06/SE-Proj22-Team11"
