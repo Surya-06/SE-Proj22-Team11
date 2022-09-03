@@ -1,4 +1,4 @@
-# Team 11 - Sample repo for HW 0
+# Team 11 - Sample repo for HW 1
 
 
 | Type | Status |
