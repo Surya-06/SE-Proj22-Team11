@@ -4,8 +4,6 @@ __author__ = "SE Team Project 11 - HW 1"
 __version__ = "0.1.0"
 __license__ = "MIT"
 
-import Code.Classes.sym
-
 # BEGIN - Older test functions - keeping them for CI sanity
 def increment(x):
     return x+1

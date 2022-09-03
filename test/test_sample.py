@@ -4,7 +4,7 @@ Run tests by running the following cmd in the root dir: py.test
 
 import sys
 from Code.main import increment, decrement, square, divide
-from Code.Classes.sym import Sym
+from Code.sym import Sym
 
 # BEGIN - Old tests for CI sanity
 
