@@ -9,10 +9,13 @@ class Sym:
 
     def addData(self, value):
         self.data.append(value);
-        self.freq_count[value]+=1;
+        if value in self.freq_count:
+            self.freq_count[value]+=1;
+        else:
+            self.freq_count[value]=1;
 
     def getMode(self):
-        return max(self.freq_count, keys=self.freq_count.get);
+        return max(self.freq_count, key=self.freq_count.get);
 
     def getEntropy(self):
         return len(self.freq_count.keys());
