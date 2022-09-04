@@ -20,6 +20,7 @@ def divide(x):
 def main():
     print("hello world, this is the HW 0 project from Team 11")
 
+the = {}
 
 if __name__ == "__main__":
     main()

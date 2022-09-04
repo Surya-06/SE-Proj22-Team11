@@ -2,8 +2,8 @@
 Run tests by running the following cmd in the root dir: py.test
 """
 
-import sys
-from Code.main import increment, decrement, square, divide
+from Code.utils import *
+from Code.main import increment, decrement, square, divide, the
 
 def test_increment():
     for i in range(1, 1000):
@@ -21,3 +21,6 @@ def test_divide():
     for i in range(1, 1000):
         assert divide(i) == i/2
 
+def eg_the():
+    oo(the)
+    return True
