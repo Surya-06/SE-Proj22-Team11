@@ -3,15 +3,15 @@ from main import the
 from utils import *
 
 class Num:
-    def __init__(self, c, s):
+    def __init__(self, c = 0, s = ''):
         self.n = 0
-        self.at = c or 0
-        self.name = s or ''
+        self.at = c
+        self.name = s
         self._has = {}
         self.lo = sys.maxsize
         self.hi = -sys.maxsize
         self.is_sorted = True
-        self.w = -1 if self.name[-1] == '-' else 1
+        self.w = -1 if self.name and self.name[-1] == '-' else 1
 
     def nums(self):
         if not self.is_sorted:
