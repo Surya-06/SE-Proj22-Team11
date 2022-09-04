@@ -21,6 +21,6 @@ def test_divide():
     for i in range(1, 1000):
         assert divide(i) == i/2
 
-def eg_the():
+def test_eg_the():
     oo(the)
     return True
