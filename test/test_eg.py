@@ -33,6 +33,7 @@ def test_eg_the():
     return True
 
 def test_eg_num():
+    the['nums'] = 32
     test_num_obj = Num()
 
     for i in range(1, 101):

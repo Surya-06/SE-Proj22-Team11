@@ -1,6 +1,6 @@
 import sys, random
-from main import the
-from utils import *
+from .main import the
+from .utils import *
 
 class Num:
     def __init__(self, c = 0, s = ''):
@@ -25,6 +25,7 @@ class Num:
             self.n  += 1
             self.lo = min(v, self.lo)
             self.hi = max(v, self.hi)
+            pos = None
             if len(self._has) < the['nums']:
                 pos = 1 + len(self._has)
             elif random.randint(0, sys.maxsize) < the['nums']/self.n:
