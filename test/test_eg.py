@@ -52,9 +52,9 @@ def test_eg_Bignum():
     for i in range(1, 1001):
         test_num_obj.add(i)
     if(32==len(test_num_obj._has)):
-        assert(true)
+        assert(True)
     else:
-        assert(flase)
+        assert(False)
     
 
 
