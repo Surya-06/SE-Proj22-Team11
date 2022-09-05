@@ -43,6 +43,18 @@ def test_eg_num():
     div = test_num_obj.div()
 
     assert( mid>=50 and mid<=52)
-    assert( div>30.5 and div<32)     
+    assert( div>30.5 and div<32)   
+    
+def test_eg_Bignum():
+    the['nums'] = 32
+    test_num_obj = Num()
+
+    for i in range(1, 1001):
+        test_num_obj.add(i)
+    if(32==len(test_num_obj._has)):
+        assert(True)
+    else:
+        assert(False)
+    
 
 
