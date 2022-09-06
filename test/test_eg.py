@@ -7,6 +7,7 @@ from Code.main import the
 from Code.sym import Sym
 from Code.num import Num
 
+#Test case:1 'sym'
 def test_eg_sym():
 
     test_data = ["a","a","a","a","b","b","c"]
@@ -28,10 +29,13 @@ def test_eg_sym():
     assert column_name == test_sym_obj.getColumnName()
     assert column_position == test_sym_obj.getColumnPosition()
 
+    
+#Test case:2 'the'
 def test_eg_the():
     oo(the)
     return True
 
+#Test case:3 'num'
 def test_eg_num():
     the['nums'] = 110
     test_num_obj = Num()
@@ -43,8 +47,10 @@ def test_eg_num():
     div = test_num_obj.div()
 
     assert( mid>=50 and mid<=52)
-    assert( div>30.5 and div<32)   
+    assert( div>30.5 and div<32)  
     
+    
+#Test case:4 'Bignum'   
 def test_eg_Bignum():
     the['nums'] = 32
     test_num_obj = Num()
