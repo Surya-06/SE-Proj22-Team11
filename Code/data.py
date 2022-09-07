@@ -2,15 +2,15 @@
 
 from enum import Enum;
 
-import utils;
-from num import Num;
-from sym import Sym;
+from .utils import the;
+from .num import Num;
+from .sym import Sym;
 
 class Data:
   def __init__(self, header_string: str):
-    if utils.the['data'] != '':
+    if the['data'] != '':
       raise Exception('RE-INITIALIZE ERROR: global data object already exists')
-    utils.the['data'] = self;
+    the['data'] = self;
     self.columns = [];
     self.column_indices = [];
     self.__setupColumnStructureFromHeader__(header_string);
@@ -49,4 +49,4 @@ class Data:
     data_values = csv_line.split(',');
     print("csv line : " , data_values);
     for i in self.column_indices:
-      self.columns[i].add(data_values[i]);
+      self.columns[i].add(data_values[i].strip());

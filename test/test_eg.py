@@ -3,7 +3,6 @@ Run tests by running the following cmd in the root dir: py.test
 """
 
 from Code.utils import *
-from Code.main import the
 from Code.sym import Sym
 from Code.num import Num
 

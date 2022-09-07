@@ -2,8 +2,8 @@
 
 # standard library imports
 
-from data import Data;
-import utils;
+from .data import Data;
+from .utils import the;
 
 class CSVReader:
 
@@ -14,11 +14,11 @@ class CSVReader:
         with open(self.filepath, 'r', encoding='utf-8') as file:
             header = file.readline();
             
-            utils.the['data'] = Data(header_string=header);
+            the['data'] = Data(header_string=header);
 
             for line in file:
                 if len(str(line).strip()) == 0:
                     break;
-                utils.the['data'].importDataFromLine(line);
+                the['data'].importDataFromLine(line);
 
 

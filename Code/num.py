@@ -1,6 +1,6 @@
 import sys, random
 
-import utils
+from .utils import *;
 
 class Num:
     def __init__(self, c = 0, s = ''):
@@ -26,9 +26,9 @@ class Num:
             self.lo = min(v, self.lo)
             self.hi = max(v, self.hi)
             pos = None
-            if len(self._has) < utils.the['nums']:
+            if len(self._has) < the['nums']:
                 pos = 1 + len(self._has)
-            elif random.randint(0, sys.maxsize) < utils.the['nums']/self.n:
+            elif random.randint(0, sys.maxsize) < the['nums']/self.n:
                 pos = random.randint(0, len(self._has))
             if pos:
                 self.is_sorted = False
