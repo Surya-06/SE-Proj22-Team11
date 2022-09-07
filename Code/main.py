@@ -4,13 +4,22 @@ __author__ = "SE Team Project 11 - HW 2"
 __version__ = "1.0.0"
 __license__ = "MIT"
 
+from cmd import *;
+from utils import *;
 from csv import CSVReader; 
 
 
 def main():
-    filepath = '';
-    csv_reader = CSVReader(filepath);
-    csv_reader.processFileContents();
+    # Should always be in the beginning
+    parseCommandLine();
+
+    # Process switches in the below priority order
+    if the['show_help'] or len(the['filepath']) == 0:
+        printHelpMessage();
+        return;
+    
+    csv_reader = CSVReader();
+    # TODO: Add further processing etc.
 
 
 if __name__ == "__main__":

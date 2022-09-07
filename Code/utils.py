@@ -2,8 +2,11 @@
 import math
 
 the = {
-    'data': ''
+    'data': '',
+    'show_help': False,
+    'filepath': ''
 };
+
 
 def per(t, p):
     p = math.floor(((p or .5)*len(t))+.5)

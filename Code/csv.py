@@ -7,8 +7,10 @@ from utils import the;
 
 class CSVReader:
 
-    def __init__(self, filepath):
-        self.filepath = filepath;
+    def __init__(self):
+        self.filepath = the['filepath']
+        if len(self.filepath.strip()) == 0:
+            raise Exception('FILE PATH ERROR: File path not provided');
 
     def processFileContents(self):
         with open(self.filepath, 'r', encoding='utf-8') as file:
