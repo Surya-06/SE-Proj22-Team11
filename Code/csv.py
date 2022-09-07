@@ -2,8 +2,8 @@
 
 # standard library imports
 
-from .data import Data;
-from .utils import the;
+from data import Data;
+from utils import the;
 
 class CSVReader:
 

@@ -1,6 +1,6 @@
 import sys, random
 
-from .utils import *;
+from utils import *;
 
 class Num:
     def __init__(self, c = 0, s = ''):

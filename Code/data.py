@@ -2,9 +2,9 @@
 
 from enum import Enum;
 
-from .utils import the;
-from .num import Num;
-from .sym import Sym;
+from utils import the;
+from num import Num;
+from sym import Sym;
 
 class Data:
   def __init__(self, header_string: str):

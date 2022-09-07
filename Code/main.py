@@ -4,7 +4,7 @@ __author__ = "SE Team Project 11 - HW 2"
 __version__ = "1.0.0"
 __license__ = "MIT"
 
-from .csv import CSVReader; 
+from csv import CSVReader; 
 
 
 def main():
