@@ -3,6 +3,10 @@ Run tests by running the following cmd in the root dir: py.test
 """
 
 #Test case:1 'sym'
+
+def test():
+    assert True;
+
 def eg_sym():
 
     test_data = ["a","a","a","a","b","b","c"]
