@@ -4,10 +4,17 @@ __author__ = "SE Team Project 11 - HW 2"
 __version__ = "1.0.0"
 __license__ = "MIT"
 
-the = {}
+import utils;
+from csv import CSVReader; 
+
 
 def main():
-    print("This currently only has the Num and Sym classes, please run the test set to cover the functionality.")
+    print("checking the functionality of the csv reader");
+    filepath = 'test.csv';
+
+    csv_reader = CSVReader(filepath);
+    csv_reader.processFileContents();
+
 
 if __name__ == "__main__":
     main()
