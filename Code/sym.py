@@ -2,7 +2,6 @@
 
 import math
 
-
 class Sym:
     def __init__(self, c = 0, s = ''):
         self.name = s
@@ -35,7 +34,4 @@ class Sym:
 
     def getData(self):
         return self.data;
-
-
-
 

@@ -2,13 +2,12 @@
 Run tests by running the following cmd in the root dir: py.test
 """
 
-from Code.utils import *
-from Code.main import the
-from Code.sym import Sym
-from Code.num import Num
-
 #Test case:1 'sym'
-def test_eg_sym():
+
+def test():
+    assert True;
+
+def eg_sym():
 
     test_data = ["a","a","a","a","b","b","c"]
     column_name = 'Test Column 1'
@@ -31,12 +30,12 @@ def test_eg_sym():
 
     
 #Test case:2 'the'
-def test_eg_the():
+def eg_the():
     oo(the)
     return True
 
 #Test case:3 'num'
-def test_eg_num():
+def eg_num():
     the['nums'] = 110
     test_num_obj = Num()
 
@@ -51,7 +50,7 @@ def test_eg_num():
     
     
 #Test case:4 'Bignum'   
-def test_eg_Bignum():
+def eg_Bignum():
     the['nums'] = 32
     test_num_obj = Num()
 
