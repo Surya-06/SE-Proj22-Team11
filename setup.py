@@ -4,7 +4,7 @@ setup(
   description="CSC 510 Homework 1",
   version="1.0",
   packages=[''],
-  liscense='MIT',
-  author='Surya,Kaushik,Pradhyumna,Harshitha,Aditi',
+  license='MIT',
+  author='Surya,Kaushik,Pradyumna,Harshitha,Aditi',
   url="https://github.com/Surya-06/SE-Proj22-Team11/blob/main/README.md"
 )
