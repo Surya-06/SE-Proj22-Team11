@@ -19,6 +19,7 @@ def main():
         return;
     
     csv_reader = CSVReader();
+    csv_reader.processFileContents();
     # TODO: Add further processing etc.
 
 
