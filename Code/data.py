@@ -32,7 +32,7 @@ class Data:
     column_name = '';
     column_position = 0;
     for character in header_string:
-      if character == ',':
+      if character == the['seperator']:
         if len(column_name) > 0:
           self.__addColumn__(column_name, column_position);
           column_name = '';
@@ -46,7 +46,7 @@ class Data:
     self.__addColumn__(column_name, column_position);
 
   def importDataFromLine(self, csv_line: str):
-    data_values = csv_line.split(',');
+    data_values = csv_line.split(the['seperator']);
     print("csv line : " , data_values);
     for i in self.column_indices:
       self.columns[i].add(data_values[i].strip());
