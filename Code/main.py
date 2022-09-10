@@ -19,7 +19,11 @@ def main():
         return;
     
     csv_reader = CSVReader();
+    csv_reader.processFileContents();
     # TODO: Add further processing etc.
+
+    for item in the['data'].columns:
+        print(item._has)
 
 
 if __name__ == "__main__":
