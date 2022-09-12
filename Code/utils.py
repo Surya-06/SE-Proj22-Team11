@@ -4,7 +4,11 @@ import math
 the = {
     'data': '',
     'show_help': False,
-    'filepath': ''
+    'filepath': '',
+    'dump': False,
+    'nums': 512,
+    'seed': 10019,
+    'seperator': ','
 };
 
 
