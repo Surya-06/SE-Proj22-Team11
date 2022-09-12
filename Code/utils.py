@@ -1,5 +1,5 @@
 # File for misc utilities
-import math
+import math, re
 
 the = {
     'data': '',
@@ -19,3 +19,17 @@ def per(t, p):
 def oo(t):
     print(str(t))
     return t
+
+def coerce(s):
+    s = float(s) if bool(re.search(r'\d', s)) else s
+    return s
+
+def csv(src):
+    if len(src.strip()) == 0:
+        raise Exception('FILE PATH ERROR: File path not provided')
+    rows = []
+    with open(src, 'r', encoding='utf-8') as file:
+        for row_no, line in enumerate(file):
+            row = list(map(coerce, line.strip().split(the['seperator'])))
+            rows.append(row)
+    return rows

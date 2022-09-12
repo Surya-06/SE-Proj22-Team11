@@ -4,7 +4,7 @@ import sys
 
 from utils import the;
 
-def printHelpMessage():
+def print_help_message():
   help_msg = '''
   Please use any of the below options and run again:
   -h OR --help : Displays this message
@@ -16,7 +16,7 @@ def printHelpMessage():
   ''';
   print(help_msg);
 
-def parseCommandLine():
+def parse_command_line():
   args = sys.argv[1:];
   i = 0;
   while i < len(args):
