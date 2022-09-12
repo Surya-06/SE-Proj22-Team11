@@ -48,5 +48,7 @@ class Data:
   def importDataFromLine(self, csv_line: str):
     data_values = csv_line.split(the['seperator']);
     print("csv line : " , data_values);
+    j=0
     for i in self.column_indices:
-      self.columns[i].add(data_values[i].strip());
+      self.columns[j].add(data_values[i].strip());
+      j+=1
