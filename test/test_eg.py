@@ -4,6 +4,14 @@ Run tests by running the following cmd in the root dir: py.test
 
 #Test case:1 'sym'
 
+import sys 
+from os import path 
+
+sys.path.append(path.dirname( path.dirname( path.abspath(__file__) )))
+
+from Code.sym import *
+from Code.num import *
+
 def test():
     assert True;
 
@@ -21,6 +29,7 @@ def eg_sym():
     for i in test_data:
         test_sym_obj.add(i)
 
+    print("Validating eg sym");
     assert test_sym_obj._has == expected_freq_count
     assert expected_mode == test_sym_obj.mid()
     assert expected_entropy == round(test_sym_obj.div(), 3)
@@ -31,6 +40,7 @@ def eg_sym():
     
 #Test case:2 'the'
 def eg_the():
+    print("Validating eg the");
     oo(the)
     return True
 
@@ -45,6 +55,7 @@ def eg_num():
     mid = test_num_obj.mid()
     div = test_num_obj.div()
 
+    print("Validing eg num");
     assert( mid>=50 and mid<=52)
     assert( div>30.5 and div<32)  
     
@@ -56,6 +67,8 @@ def eg_Bignum():
 
     for i in range(1, 1001):
         test_num_obj.add(i)
+    
+    print("Validating eg big num");
     if(32==len(test_num_obj._has)):
         assert(True)
     else:
