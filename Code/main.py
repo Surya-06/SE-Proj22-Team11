@@ -18,6 +18,22 @@ def main():
         return
         
     d = Data(the['filepath'])
-
+    
+    if the['eg'] is not None:
+        if the['eg'] in ('eg_sym', 'egSym'):
+            eg_sym()
+        elif the['eg'] in ('eg_the','egThe'):
+            eg_the()
+        elif the['eg'] in ('eg_num','egNum'):
+            eg_num()
+        elif the['eg'] in ('eg_Bignum','egBignum'):
+            eg_Bignum()
+    else:
+         eg_sym()
+         eg_the()
+         eg_num()
+         eg_Bignum()
+        
+        
 if __name__ == "__main__":
     main()
