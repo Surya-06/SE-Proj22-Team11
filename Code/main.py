@@ -15,9 +15,10 @@ def main():
     # Process switches in the below priority order
     if the['show_help'] or len(the['filepath']) == 0:
         print_help_message()
-        return
-        
-    d = Data(the['filepath'])
+        # return
+
+    if the['filepath']:    
+        d = Data(the['filepath'])
     
     if the['eg'] is not None:
         if the['eg'] in ('eg_sym', 'egSym'):
