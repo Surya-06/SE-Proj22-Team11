@@ -61,5 +61,13 @@ def eg_Bignum():
     else:
         assert(False)
     
+#HW2 Test cases
+#Test case:1 eg.CSV
+#def eg_csv():
 
+#Test Case:2 eg.Data
+#def eg_data():
+
+#Test Case:3 eg.stats
+#def eg_stats():
 
