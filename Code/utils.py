@@ -8,7 +8,8 @@ the = {
     'dump': False,
     'nums': 512,
     'seed': 10019,
-    'seperator': ','
+    'seperator': ',',
+    'eg': None
 };
 
 

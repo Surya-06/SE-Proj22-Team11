@@ -13,6 +13,7 @@ def print_help_message():
   -n or --nums : Set number of nums to keep
   -s or --seed : Set random number seed
   -S or --seperator : Set field seperator
+  -e or --eg : Start-up example
   ''';
   print(help_msg);
 
@@ -36,7 +37,10 @@ def parse_command_line():
       the['seed'] = args[i]
     elif args[i] == '-S' or args[i] == '--seperator':
       i = i+1
-      the['seperator'] = args[i]          
+      the['seperator'] = args[i]
+    elif args[i] == '-e' or args[i] == '--eg':
+      i = i+1
+      the['eg'] = args[i]       
     else:
       raise Exception('WRONG OPTION: Please run with -h for help page.');
     i += 1;
