@@ -17,6 +17,12 @@ def print_help_message():
   ''';
   print(help_msg);
 
+def get_option_for_switch(i, args):
+  if i+1 >= len(args):
+    raise Exception("Invalid parameters. Please run again with '-h' for instructions");
+  
+  return sys.argv[i+1], i+1;
+
 def parse_command_line():
   args = sys.argv[1:];
   i = 0;
@@ -24,23 +30,17 @@ def parse_command_line():
     if args[i] == '-h' or args[i] == '--help':
       the['show_help'] = True;
     elif args[i] == '-f' or args[i] == '--filepath':
-      i = i+1
-      the['filepath'] = args[i];
+      the['filepath'], i = get_option_for_switch(i, args);
     elif args[i] == '-d' or args[i] == '--dump':
-      i = i+1
-      the['dump'] = args[i]
+      the['dump'], i = get_option_for_switch(i, args);
     elif args[i] == '-n' or args[i] == '--nums':
-      i = i+1
-      the['nums'] = args[i]  
+      the['nums'], i = get_option_for_switch(i, args);
     elif args[i] == '-s' or args[i] == '--seed':
-      i = i+1
-      the['seed'] = args[i]
+      the['seed'], i = get_option_for_switch(i, args);
     elif args[i] == '-S' or args[i] == '--seperator':
-      i = i+1
-      the['seperator'] = args[i]
+      the['seperator'], i = get_option_for_switch(i, args);
     elif args[i] == '-e' or args[i] == '--eg':
-      i = i+1
-      the['eg'] = args[i]       
+      the['eg'], i = get_option_for_switch(i, args);
     else:
       raise Exception('WRONG OPTION: Please run with -h for help page.');
     i += 1;
