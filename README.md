@@ -9,9 +9,14 @@
 NCSU Fall 22 SE proj repo for Team 11
 
 Summary:
+HW-2
 1. The project currently works for the 'Num' and 'Sym' classes
 2. The init point currently prints out only a sample help string.
 3. The test cases 'the', 'num', 'sym' and 'bignum' are currently hooked up to the CI.
+
+HW-3
+1.The prject includes classes for Cols, Row, Data
+2.The test cases "eg.csv", "eg.data", "eg.stats" have been added.
 
 ## Team Members:
 - Aditi Vakeel
