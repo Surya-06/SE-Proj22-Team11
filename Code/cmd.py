@@ -21,7 +21,7 @@ def get_option_for_switch(i, args):
   if i+1 >= len(args):
     raise Exception("Invalid parameters. Please run again with '-h' for instructions");
   
-  return sys.argv[i+1], i+1;
+  return args[i+1], i+1;
 
 def parse_command_line():
   args = sys.argv[1:];
