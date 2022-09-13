@@ -4,6 +4,11 @@ Run tests by running the following cmd in the root dir: py.test
 
 #Test case:1 'sym'
 
+import sys 
+from os import path 
+
+sys.path.append(path.dirname( path.dirname( path.abspath(__file__) )))
+
 from Code.sym import *
 from Code.num import *
 
