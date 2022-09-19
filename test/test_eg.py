@@ -12,6 +12,7 @@ sys.path.append(path.dirname( path.dirname( path.abspath(__file__) )))
 
 from Code.sym import *
 from Code.num import *
+from data import Data
 
 def test():
     assert True;
@@ -74,21 +75,26 @@ def eg_Bignum():
         assert(True)
     else:
         assert(False)
-    
+
+        
+        
 #HW2 Test cases
-#Test case:1 eg.CSV
+
+#Test case:1 eg_CSV
 def eg_csv():
     n=0
-    rows=csv("/data/auto93.csv")
-    if (n<=10):
+    rows=csv("auto93.csv")
+    print("Validating csv")
+    while(n<=10):
         oo(rows[n])
         n=n+1
+        
+#Test case:2 eg_Data
+def eg_data():
+    d=Data("auto93.csv")
+    print("Validating Data")
+    for i in d.cols.y:
+        print(":at {} , :hi {}, :is_sorted {}, :lo {}, :n {}, :name {}, :w {}".format( i.at, i.hi, i.is_sorted, i.lo, i.n, i.name,i.w))  
 
-#Test Case:2 eg.Data
-#def eg_data():
-    
-
-#Test Case:3 eg.stats
-#def eg_stats():
-
+ #Test case:3 eg_stats  
 
