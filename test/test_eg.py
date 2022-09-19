@@ -5,7 +5,8 @@ Run tests by running the following cmd in the root dir: py.test
 #Test case:1 'sym'
 
 import sys 
-from os import path 
+from os import path
+
 
 sys.path.append(path.dirname( path.dirname( path.abspath(__file__) )))
 
@@ -76,11 +77,18 @@ def eg_Bignum():
     
 #HW2 Test cases
 #Test case:1 eg.CSV
-#def eg_csv():
+def eg_csv():
+    n=0
+    rows=csv("/data/auto93.csv")
+    if (n<=10):
+        oo(rows[n])
+        n=n+1
 
 #Test Case:2 eg.Data
 #def eg_data():
+    
 
 #Test Case:3 eg.stats
 #def eg_stats():
+
 
