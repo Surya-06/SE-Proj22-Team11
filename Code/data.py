@@ -37,4 +37,3 @@ class Data:
       v = round(v, places) if isinstance(v, float) else v
       t[col.name]=v
       return t
-
