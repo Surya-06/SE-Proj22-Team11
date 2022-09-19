@@ -34,4 +34,3 @@ class Sym:
 
     def getData(self):
         return self.data;
-
