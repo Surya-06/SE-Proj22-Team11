@@ -41,6 +41,9 @@ def main():
             eg_the()
             eg_num()
             eg_Bignum()
+            eg_csv()
+            eg_data()
+            eg_stats()
 
         
 if __name__ == "__main__":
