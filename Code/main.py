@@ -36,11 +36,20 @@ def main():
             eg_num()
         elif the['eg'] in ('eg_Bignum','egBignum'):
             eg_Bignum()
+        elif the['eg'] in ('eg_csv','egCSV'):
+            eg_csv()
+        elif the['eg'] in ('eg_data','egData'):
+            eg_data()
+        elif the['eg'] in ('eg_stats','egStats'):
+            eg_stats()        
         elif the['eg'] in ('all', 'All'):
             eg_sym()
             eg_the()
             eg_num()
             eg_Bignum()
+            eg_csv()
+            eg_data()
+            eg_stats()
 
         
 if __name__ == "__main__":
