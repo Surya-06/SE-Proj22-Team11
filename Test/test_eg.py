@@ -95,3 +95,5 @@ def eg_data():
 
  #Test case:3 eg_stats  
 
+def eg_stats():
+    pass
