@@ -33,6 +33,6 @@ class Data:
     t = {}
     for col in showCols:
       v = col.mid() if fun == 'mid' else col.div()
-      v = round(v, places) if isinstance(v, float) else v
+      v = round(v, places) if isinstance(v, float) else float(v)
       t[col.name]=v
     return t
