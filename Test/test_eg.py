@@ -111,9 +111,10 @@ def eg_stats():
     data = Data(get_test_file_path())
     print("-------------------------------------------------------------------------")
     print("xmid  ", data.stats(2, data.cols.x, "mid"))
-    print("xdiv  ", data.stats(3, data.cols.x, "div"))
+    # print("xdiv  ", data.stats(3, data.cols.x, "div"))
     print("ymid  ", data.stats(1, data.cols.y, "mid"))
-    
+    print("ydiv  ", data.stats(3, data.cols.y, "div"))
+    # print("\n")
 
 # Test case: eg_list
 
