@@ -5,6 +5,12 @@
 | ---------- | -------------------- |
 | DOI | [![DOI](https://zenodo.org/badge/527815538.svg)](https://zenodo.org/badge/latestdoi/527815538) |
 | CI/ CD | ![Python CI](https://github.com/Surya-06/SE-Proj22-Team11/actions/workflows/build-test.yaml/badge.svg) |
+| Coverage | [![codecov](https://codecov.io/gh/Surya-06/SE-Proj22-Team11/branch/main/graph/badge.svg?token=LWOMLVX5O7)](https://codecov.io/gh/Surya-06/SE-Proj22-Team11) |
+
+Coverage Graph:
+<div align="center">
+<img src="https://codecov.io/gh/Surya-06/SE-Proj22-Team11/branch/main/graphs/icicle.svg?token=LWOMLVX5O7" height="200" width="200"/>
+</div>
 
 NCSU Fall 22 SE proj repo for Team 11
 
