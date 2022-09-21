@@ -109,15 +109,11 @@ def eg_stats():
         the['data'] = ''
 
     data = Data(get_test_file_path())
-    print("Validating Stats")
-    print("xmid:")
-    print(data.stats(2, data.cols.x, "mid"))
-    print("xdiv:")
-    print(data.stats(2, data.cols.x, "div"))
-    print("ymid:")
-    print(data.stats(2, data.cols.y, "mid"))
-    print("ydiv:")
-    print(data.stats(2, data.cols.y, "div"))
+    print("-------------------------------------------------------------------------")
+    print("xmid  ", data.stats(2, data.cols.x, "mid"))
+    print("xdiv  ", data.stats(3, data.cols.x, "div"))
+    print("ymid  ", data.stats(1, data.cols.y, "mid"))
+    print("ydiv  ", data.stats(3, data.cols.y, "div"))
     print("\n")
 
 # Test case: eg_list
