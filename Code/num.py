@@ -16,8 +16,6 @@ class Num:
     def nums(self):
         if not self.is_sorted:
             self._has = dict(zip(range(1, len(self._has)+1), sorted(self._has.values())))
-                
-            dict(sorted(self._has.items()))
             self.is_sorted = True
         return self._has
     
@@ -41,4 +39,6 @@ class Num:
         return (per(a,.9)-per(a,.1))/2.58
     
     def mid(self):
+        if self.name=
+        print(self._has)
         return per(self.nums(),.5)
