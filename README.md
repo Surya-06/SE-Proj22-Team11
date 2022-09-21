@@ -9,7 +9,7 @@
 
 Coverage Graph:
 <div align="center">
-<img src="https://codecov.io/gh/Surya-06/SE-Proj22-Team11/branch/main/graphs/icicle.svg?token=LWOMLVX5O7" height="200" width="200"/>
+<img src="https://codecov.io/gh/Surya-06/SE-Proj22-Team11/branch/main/graphs/icicle.svg?token=LWOMLVX5O7" height="100" width="500"/>
 </div>
 
 NCSU Fall 22 SE proj repo for Team 11
