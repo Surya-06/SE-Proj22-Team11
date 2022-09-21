@@ -23,13 +23,13 @@ HW-2
 3. The test cases 'the', 'num', 'sym' and 'bignum' are currently hooked up to the CI.  
 
 HW-3  
-1.The project includes classes for Cols, Row, Data  
-2.The test cases "eg.csv", "eg.data", "eg.stats" have been added.  
+1.The project includes classes for Cols, Row, Data\
+2.The test cases "eg.csv", "eg.data", "eg.stats" have been added.\
 
 
 HW-4  
-1.Added post-commit hooks to auto run all Test-cases.  
-2.Added Code Coverage checks.  
+1.Added post-commit hooks to auto run all Test-cases.\
+2.Added Code Coverage checks.\
 
 ## Team Members:
 - Aditi Vakeel
