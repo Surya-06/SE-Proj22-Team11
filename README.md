@@ -1,4 +1,4 @@
-# Team 11 - Sample repo for HW 2
+# Team 11 - Repository for HOMEWORK -1,2,3,4
 
 
 | Type | Status |
@@ -21,8 +21,9 @@ HW-2
 3. The test cases 'the', 'num', 'sym' and 'bignum' are currently hooked up to the CI.
 
 HW-3
-1.The prject includes classes for Cols, Row, Data
-2.The test cases "eg.csv", "eg.data", "eg.stats" have been added.
+1.The prject includes classes for Cols, Row, Data  
+2.The test cases "eg.csv", "eg.data", "eg.stats" have been added.  
+
 
 ## Team Members:
 - Aditi Vakeel
