@@ -96,6 +96,10 @@ def eg_csv():
 
 #Test case:2 eg_Data
 def eg_data():
+
+    if the['data']:
+        the['data'] = ''
+
     d = Data(get_test_file_path())
     print("Validating Data")
     for i in d.cols.y:
