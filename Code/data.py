@@ -6,6 +6,7 @@ from utils import the, csv
 from num import Num
 from sym import Sym
 from rows import Rows
+from pathlib import Path
 
 class Data:
   def __init__(self, src):
@@ -14,6 +15,7 @@ class Data:
     the['data'] = self
     self.cols = None
     self.rows = []
+    src = Path(src)
     src = csv(src)
     for row in src:
       self.add(row)
