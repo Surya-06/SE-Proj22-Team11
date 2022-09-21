@@ -5,7 +5,15 @@ import sys
 from os import path
 from pathlib import Path
 
-sys.path.append(path.dirname( path.dirname( path.abspath(__file__) )))
+# Add required paths to resolve imports
+kTestFolderPath = str(Path(__file__).parent.absolute())
+kCodeFolderPath = str(Path(Path(__file__).parent.parent/"Code").absolute());
+
+sys.path.append(kTestFolderPath);
+sys.path.append(kCodeFolderPath);
+
+print()
+print("updated value of sys.path : " , sys.path );
 
 from Code.sym import *
 from Code.num import *
@@ -13,9 +21,6 @@ from data import Data
 
 def get_test_file_path():
     return Path(__file__).parent/"auto93.csv"
-
-def test():
-    assert True;
 
 def eg_sym():
 
@@ -136,4 +141,8 @@ def eg_all():
     eg_csv()
     eg_data()
     eg_stats()
-    eg_the()      
+    eg_the()
+
+def test_runner():
+    print("Runner for automated hooks in github");
+    eg_all();
