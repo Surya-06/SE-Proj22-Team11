@@ -14,8 +14,7 @@ class Data:
     the['data'] = self
     self.cols = None
     self.rows = []
-    if type(src) == str:
-      src = csv(src)
+    src = csv(src)
     for row in src:
       self.add(row)
   
