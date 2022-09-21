@@ -29,9 +29,9 @@ class Data:
           col.add(row.cells[col.at])
   
   def stats(self, places, showCols, fun):
-    showCols, fun = showCols or self.cols.y, fun or 'mid'
-    t = {}
-    for col in showCols:
+    # showCols, fun = showCols or self.cols.y, fun or 'mid'
+    # t = {}
+    # for col in showCols:
       v = col.mid() if fun == 'mid' else col.div()
       v = round(v, places) if isinstance(v, float) else v
       t[col.name]=v
