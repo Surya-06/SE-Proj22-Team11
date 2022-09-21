@@ -41,16 +41,11 @@ def main():
         elif the['eg'] in ('eg_data','egData'):
             eg_data()
         elif the['eg'] in ('eg_stats','egStats'):
-            eg_stats()        
-        elif the['eg'] in ('all', 'All'):
-            eg_sym()
-            eg_the()
-            eg_num()
-            eg_Bignum()
-            eg_csv()
-            eg_data()
             eg_stats()
+        elif the['eg'] in ('eg_list','egList'):
+            eg_stats()        
+        elif the['eg'] in ('eg_all', 'all', 'All'):
+            eg_all()
 
-        
 if __name__ == "__main__":
     main()
