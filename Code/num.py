@@ -39,6 +39,4 @@ class Num:
         return (per(a,.9)-per(a,.1))/2.58
     
     def mid(self):
-        if self.name=
-        print(self._has)
         return per(self.nums(),.5)
