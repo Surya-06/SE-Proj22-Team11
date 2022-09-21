@@ -2,16 +2,25 @@
 #Test case:1 'sym'
 
 import sys 
-from os import path 
+from os import path
+from pathlib import Path
 
-sys.path.append(path.dirname( path.dirname( path.abspath(__file__) )))
+# Add required paths to resolve imports
+kTestFolderPath = str(Path(__file__).parent.absolute())
+kCodeFolderPath = str(Path(Path(__file__).parent.parent/"Code").absolute());
+
+sys.path.append(kTestFolderPath);
+sys.path.append(kCodeFolderPath);
+
+print()
+print("updated value of sys.path : " , sys.path );
 
 from Code.sym import *
 from Code.num import *
 from data import Data
 
-def test():
-    assert True;
+def get_test_file_path():
+    return Path(__file__).parent/"auto93.csv"
 
 def eg_sym():
 
@@ -77,7 +86,8 @@ def eg_Bignum():
 
 def eg_csv():
     n=0
-    rows=csv("auto93.csv")
+    filepath = get_test_file_path()
+    rows=csv(filepath)
     print("Validating csv")
     while(n<=10):
         oo(rows[n])
@@ -86,7 +96,7 @@ def eg_csv():
 
 #Test case:2 eg_Data
 def eg_data():
-    d=Data("auto93.csv")
+    d = Data(get_test_file_path())
     print("Validating Data")
     for i in d.cols.y:
         print(":at {} , :hi {}, :is_sorted {}, :lo {}, :n {}, :name {}, :w {}\n".format( i.at, i.hi, i.is_sorted, i.lo, i.n, i.name,i.w))  
@@ -98,7 +108,7 @@ def eg_stats():
     if the['data']:
         the['data'] = ''
 
-    data = Data("auto93.csv")
+    data = Data(get_test_file_path())
     print("Validating Stats")
     print("xmid:")
     print(data.stats(2, data.cols.x, "mid"))
@@ -131,4 +141,8 @@ def eg_all():
     eg_csv()
     eg_data()
     eg_stats()
-    eg_the()      
+    eg_the()
+
+def test_runner():
+    print("Runner for automated hooks in github");
+    eg_all();

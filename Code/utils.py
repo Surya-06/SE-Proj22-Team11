@@ -1,5 +1,6 @@
 # File for misc utilities
 import math, re
+from pathlib import Path
 
 the = {
     'data': '',
@@ -25,11 +26,16 @@ def coerce(s):
     s = float(s) if bool(re.search(r'\d', s)) else s
     return s
 
-def csv(src):
-    if len(src.strip()) == 0:
-        raise Exception('FILE PATH ERROR: File path not provided')
+def csv(filepath: Path):
+    print("Exists criteria : ", filepath.exists())
+    print("suffix : ", filepath.suffix)
+
+    if not filepath.exists() or filepath.suffix != '.csv':
+        print("File path does not exist OR File not csv, given path: ", filepath.absolute())
+        return
+
     rows = []
-    with open(src, 'r', encoding='utf-8') as file:
+    with open(filepath.absolute(), 'r', encoding='utf-8') as file:
         for row_no, line in enumerate(file):
             row = list(map(coerce, line.strip().split(the['seperator'])))
             rows.append(row)
