@@ -27,6 +27,7 @@ def coerce(s):
     return s
 
 def csv(filepath: Path):
+    filepath = Path(filepath);
     print("Exists criteria : ", filepath.exists())
     print("suffix : ", filepath.suffix)
 
