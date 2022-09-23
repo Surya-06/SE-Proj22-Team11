@@ -8,6 +8,7 @@ from pathlib import Path
 # Add required paths to resolve imports
 kTestFolderPath = str(Path(__file__).parent.absolute())
 kCodeFolderPath = str(Path(Path(__file__).parent.parent/"Code").absolute());
+kDataFolderPath = Path(Path(__file__).parent.parent/"Data").absolute();
 
 sys.path.append(kTestFolderPath);
 sys.path.append(kCodeFolderPath);
@@ -20,7 +21,7 @@ from Code.num import *
 from data import Data
 
 def get_test_file_path():
-    return Path(__file__).parent/"auto93.csv"
+    return kDataFolderPath/"auto93.csv";
 
 def eg_sym():
 
