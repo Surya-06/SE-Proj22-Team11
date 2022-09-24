@@ -20,7 +20,7 @@ from Code.num import *
 from data import Data
 
 def get_test_file_path():
-    return Path(__file__).parent/"auto93.csv"
+    return Path(__file__).parent.parent/"data"/"auto93.csv";
 
 def eg_sym():
 
