@@ -1,7 +1,9 @@
 |Type| Detail|
 |--------|-------|
-| Evaluated By | Surya Prakash Susarla |
+| Evaluated By | Surya Susarla |
 | ID | 20041882 |
+| Unity ID | spsusarl |
+| Team | 11 |
 | Project Link | [Group 30 Repo](https://github.com/Swarangigaurkar/Group30_Hw2_3_4_5) |
 
 ******
