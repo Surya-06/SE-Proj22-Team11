@@ -17,12 +17,12 @@ NOTE: Software Sustainability Evaluation skipped for the current project as disc
 |-----|---------|
 |Video1| N/A | 
 |Video2| N/A | 
-|Workload is spread over the whole team | Yes ([Github contributor stats](https://github.com/ShiveshJha12/SE_group28_HW2/graphs/contributors) |
+|Workload is spread over the whole team | Yes ([Github contributor stats](https://github.com/ShiveshJha12/SE_group28_HW2/graphs/contributors)) |
 |Number of commits| 73 commits in total |
 |Number of commits: by different people| sshah3420 -> 31 ; ShiveshJha12 -> 19 ; neelshah26 -> 12 ; wutever0017 -> 6 ; Sanayshah2 -> 5 |
 |Issues reports: there are **many**| N/A |
 |Issues are being closed| N/A |
-|DOI badge: exists| Yes ([DOI](https://zenodo.org/record/7094780#.YzJk_-zMK3I) |
+|DOI badge: exists| Yes ([DOI](https://zenodo.org/record/7094780#.YzJk_-zMK3I)) |
 |Docs: doco generated, format not ugly | N/A |
 |Docs: what: point descriptions of each class/function (in isolation) | N/A |
 |Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z| N/A | 
