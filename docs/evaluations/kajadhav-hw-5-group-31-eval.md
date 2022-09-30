@@ -1,6 +1,6 @@
 Github Link: https://github.com/CSC-510-Team-31/CSC_510-Team-31_HW2345
 
-Score: 30
+Score: 42
 
 |Notes|Score|Evidence|
 |-----|---------|---------|
@@ -33,4 +33,4 @@ Score: 30
 |Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)| 1 | Not much evidence |
 |Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|  | 
 |Evidence that the members of the team are working across multiple places in the code base| 3 | https://github.com/CSC-510-Team-31/CSC_510-Team-31_HW2345/pulse/monthly |
-|Short release cycles | 3 | https://github.com/CSC-510-Team-31/CSC_510-Team-31_HW2345/graphs/code-frequency |
+|Short release cycles | 0 | Not much evidence |
