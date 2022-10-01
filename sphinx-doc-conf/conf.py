@@ -17,7 +17,7 @@ release = '1'
 extensions = []
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = ['sphinx.ext.autodoc']
 
 
 

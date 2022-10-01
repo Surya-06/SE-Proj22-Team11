@@ -10,6 +10,7 @@ Welcome to Team 11 SE Project CSV reader's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   modules
 
 
 Indices and tables
