@@ -23,3 +23,4 @@ help:
 	@$(SPHINXDOC) -f -o "$(SOURCEDIR)" "$(MODULE_PATH)"
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	mv docs/api-docs/html/* docs/
+	rm -r api-docs/
