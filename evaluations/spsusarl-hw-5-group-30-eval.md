@@ -11,7 +11,9 @@
 
 ### Rubric:
 
-NOTE: Software Sustainability Evaluation skipped for the current project as discussed in Discord. [Link](https://discord.com/channels/1009547855301718107/1009549425288429608/1023416944101163069)
+NOTE: Software Sustainability Evaluation skipped for the current project as discussed in Discord. [Link](https://discord.com/channels/1009547855301718107/1009549425288429608/1023416944101163069). 
+
+Score:33
 
 |Notes|score|evidence|
 |-----|-----|---------|
